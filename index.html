@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Retro Bowl - Mini</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div id="game">
+    <header>
+      <h1>Retro Bowl — Mini</h1>
+      <div id="scoreboard">
+        <div id="teams">
+          <div><strong id="homeName">HOME</strong> <span id="homeScore">0</span></div>
+          <div><strong id="awayName">AWAY</strong> <span id="awayScore">0</span></div>
+        </div>
+        <div id="gameInfo">Quarter: <span id="quarter">1</span> • Time: <span id="time">10:00</span></div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="field" width="900" height="350"></canvas>
+      <div id="hud">
+        <div id="downDistance">1st & 10 • Ball on 25</div>
+        <div id="controls">
+          <button id="runBtn">Run</button>
+          <button id="passBtn">Pass</button>
+          <button id="kickBtn">Kick</button>
+          <button id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <small>Simple retro-style mini-game. Controls: Run / Pass / Kick.</small>
+    </footer>
+  </div>
+
+  <script src="src/game.js"></script>
+</body>
+</html>
